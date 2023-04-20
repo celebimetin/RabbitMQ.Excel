@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>dotnet-FileCreateWorkerService-82558074-a021-48b6-a306-8b683dd06320</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ClosedXML" Version="0.101.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+		<PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Shared\Shared.csproj" />
+	</ItemGroup>
+</Project>
